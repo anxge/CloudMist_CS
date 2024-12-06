@@ -1,9 +1,9 @@
 # CloudMist CS Plugin
 
 一个基于 Bukkit/Spigot 的我的世界 CS:GO 游戏模式插件。
-由雾里云端开发团队开发
-插件作者：Jens_Hon
-协调开发者：Kenty and ANshiwang
+- 由雾里云端开发团队开发
+- 插件作者：Jens_Hon
+- 协调开发者：Kenty and ANshiwang
 
 ## 功能特点
 
