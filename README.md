@@ -18,7 +18,7 @@
 
 ## 命令
 
-### 玩家命令 (`/cmcs`, `/cs`, `/csgo`,`/csadmin`)
+### 玩家命令 (`/cmcs`, `/cs`, `/csgo`,)
 
 - `/cmcs join <游戏>` - 加入游戏
 - `/cmcs leave` - 离开当前游戏
