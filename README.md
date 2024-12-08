@@ -7,6 +7,9 @@
 - 参与的开发者：Jens_Hon，Kenty，ANshiwang
 
 ## 功能特点
+- 插件对TACZ模组有兼容，同时没有TACZ也能运行
+- ![image](https://github.com/user-attachments/assets/6037db90-4d4d-4700-bc77-858a86a9b7b3)
+
 
 - 完整的 CS:GO 游戏机制
 - 支持多个游戏场地同时运行
