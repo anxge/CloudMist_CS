@@ -1,0 +1,26 @@
+# 武器价格设置
+prices:
+  AK47: 2700    # AK47价格
+  M4A1: 3100    # M4A1价格
+  AWP: 4750     # AWP价格
+  DEAGLE: 700   # 沙漠之鹰价格
+  GLOCK17: 400  # 格洛克价格
+
+# 默认装备设置
+loadouts:
+  terrorist:           # T队默认装备
+    primary: "GLOCK17"  # 主武器
+    special: "TNT"      # 特殊装备(C4)
+    armor: false        # 是否有护甲
+    knife: true        # 添加默认近战武器
+  counter_terrorist:    # CT队默认装备
+    primary: "GLOCK17"  # 主武器
+    armor: false        # 是否有护甲
+    knife: true        # 添加默认近战武器
+
+# 武器限制
+restrictions:
+  terrorist:          # T队禁用武器
+    - "M4A1"
+  counter_terrorist:  # CT队禁用武器
+    - "AK47"

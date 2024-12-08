@@ -1,0 +1,48 @@
+# CloudMist CS 主配置文件
+main:
+  debug: false        # 是否启用调试模式，启用后会输出更多日志信息
+  language: "zh_CN"   # 插件语言，目前支持：zh_CN(简体中文)
+  storage_type: "yaml"  # 存储类型: yaml(本地文件) / mysql(数据库)
+  prefix: "§6[CloudMist CS] "  # 插件消息前缀，支持颜色代码
+  auto_save: true     # 添加自动保存配置
+  save_interval: 300  # 自动保存间隔（秒）
+  version: "1.0.0"    # 插件版本号，用于配置文件升级
+  update_check: true  # 是否检查更新
+
+# 数据库配置（仅在 storage.type 为 mysql 时生效）
+storage:
+  type: "yaml"  # 存储类型: yaml(本地文件) / mysql(数据库)
+  mysql:
+    enabled: false    # 是否启用MySQL数据库
+    host: "localhost" # 数据库地址
+    port: 3306       # 数据库端口
+    database: "cloudmist_cs"  # 数据库名称
+    username: "root"  # 数据库用户名
+    password: "password"  # 数据库密码
+    pool:
+      min_connections: 3    # 最小连接数
+      max_connections: 10   # 最大连接数
+      timeout: 30000       # 连接超时时间(毫秒)
+      keep_alive: true     # 是否保持连接
+    table_prefix: "cs_"    # 数据表前缀
+
+# 日志设置
+log:
+  enabled: true           # 是否启用日志
+  keep_days: 7           # 日志保留天数
+  write_to_file: true    # 是否写入文件
+  log_level: "INFO"      # 日志级别: DEBUG/INFO/WARNING/ERROR
+  categories:            # 日志类别开关
+    game: true
+    economy: true
+    weapon: true
+    error: true
+    debug: false
+    performance: true  # 性能日志开关
+
+# 目录结构
+directories:
+  configs: "configs"  # 配置文件目录
+  data: "data"       # 数据文件目录
+  logs: "logs"       # 日志文件目录
+  backups: "backups"  # 备份目录

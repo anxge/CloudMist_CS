@@ -1,0 +1,17 @@
+tacz:
+  enabled: true
+  fallback_enabled: true
+  debug: false
+  weapons:
+    mapping:
+      AK47: "modern_kinetic_gun{GunId:\"tacz:ak47\",GunFireMode:\"SEMI\"}"
+      M4A1: "modern_kinetic_gun{GunId:\"tacz:m4a1\",GunFireMode:\"SEMI\"}"
+      GLOCK17: "modern_kinetic_gun{GunId:\"tacz:glock_17\",GunFireMode:\"SEMI\"}"
+      DEAGLE: "modern_kinetic_gun{GunId:\"tacz:deagle\",GunFireMode:\"SEMI\"}"
+      AWP: "modern_kinetic_gun{GunId:\"tacz:ai_awp\",GunFireMode:\"SEMI\"}"
+      KNIFE: "modern_melee{MeleeId:\"tacz:knife\"}"
+  
+  settings:
+    damage_multiplier: 1.0
+    headshot_multiplier: 4.0
+    friendly_fire_multiplier: 0.33

@@ -1,0 +1,23 @@
+start_money: 800   # 玩家初始金钱
+max_money: 16000    # 玩家最大金钱数量
+
+# 奖励设置
+rewards:
+  kill: 300         # 击杀奖励
+  headshot: 100     # 爆头额外奖励
+  win_round: 3000   # 赢得回合奖励
+  lose_bonus:       # 连续失败奖励
+    base: 1400      # 基础失败奖励
+    increment: 500  # 每次失败增加金额
+    max: 3400       # 最大失败奖励
+  bomb_plant: 300   # 安放炸弹奖励
+  bomb_defuse: 300  # 拆除炸弹奖励
+
+# 惩罚设置
+penalties:
+  team_kill: -300    # 击杀队友惩罚
+  suicide: -300      # 自杀惩罚
+# 经济系统设置
+economy:
+  kill_interest: 0.5  # 击杀利息倍率
+  round_loss_increment: true  # 是否启用连续失败奖励递增
