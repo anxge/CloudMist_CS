@@ -1,5 +1,6 @@
 # CloudMist CS Plugin
-
+注意：这个项目暂时还处于开发阶段，并不成熟，遇到的一切BUG都是正常现象
+如果你无法接受，请不要使用！
 一个基于 Bukkit/Spigot 的我的世界 CS:GO 游戏模式插件。
 - 由雾里云端开发团队开发
 - 插件作者：Jens_Hon
@@ -16,30 +17,43 @@
 - 计分板实时显示
 - 自定义游戏设置
 
+- 游戏管理
+  - 多个游戏房间同时运行
+  - 灵活的队伍分配
+  - 自动平衡队伍人数
+  - 完整的计分板显示
+
+- 玩家系统
+  - 击杀统计
+  - 死亡统计
+  - 经济系统
+  - 武器购买系统
+
+## 配置
+
+配置文件位于 `plugins/CloudMist_CS/config.yml`
+
 ## 命令
 
-### 玩家命令 (`/cmcs`, `/cs`, `/csgo`,)
+## 命令
 
-- `/cmcs join <游戏>` - 加入游戏
-- `/cmcs leave` - 离开当前游戏
-- `/cmcs list` - 查看可用游戏
-- `/cmcs buy` - 打开购买菜单
-- `/cmcs money` - 查看当前金钱
-- `/cmcs stats` - 查看个人数据
-- `/cmcs top` - 查看排行榜
+### 管理员命令
+- `/cs create <名称>` - 创建新游戏
+- `/cs remove <名称>` - 删除游戏
+- `/cs setlobby <名称>` - 设置游戏大厅
+- `/cs setspawn <名称> <队伍>` - 设置队伍出生点
+- `/cs forcestart <名称>` - 强制开始游戏
+- `/cs forcestop <名称>` - 强制结束游戏
 
-### 管理员命令 (`/csadmin`)
+### 玩家命令
+- `/cs join <名称>` - 加入游戏
+- `/cs leave` - 离开游戏
+- `/cs list` - 查看可用游戏列表
+- `/cs team <队伍>` - 选择队伍
 
-- `/csadmin create <名称>` - 创建新游戏
-- `/csadmin delete <游戏>` - 删除游戏
-- `/csadmin start <游戏>` - 强制开始游戏
-- `/csadmin stop <游戏>` - 强制停止游戏
-- `/csadmin setlobby <游戏>` - 设置大厅
-- `/csadmin setspawn <游戏> <t/ct>` - 设置出生点
-- `/csadmin setbombsite <游戏> <A/B>` - 设置炸弹点
-- `/csadmin setbuyzone <游戏>` - 设置购买区
-- `/csadmin reload` - 重载配置
-- `/csadmin settings` - 查看设置
+## API
+
+插件提供了完整的 API 接口供其他插件调用：
 
 ## 权限
 
@@ -74,13 +88,21 @@
 
 ## 依赖
 
-- Bukkit/Spigot 1.12+ 
+- Bukkit/Spigot 1.12.2+
 - Java 8+
 
-## 开发者
+## 开源协议
 
-WLYD Team
+本项目采用依据Github开源协议开源
+详细请看开源协议
 
-## 许可证
+## 贡献
 
-[MIT License](LICENSE)
+欢迎提交 Issue 和 Pull Request！
+
+## 联系方式
+
+如有问题或建议，请通过以下方式联系：
+
+- GitHub Issues
+- Email: 3406814785@qq.com
