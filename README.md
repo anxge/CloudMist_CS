@@ -1,7 +1,7 @@
 # CloudMist CS Plugin
 - 注意：这个项目暂时还处于开发阶段，并不成熟，遇到的一切BUG都是正常现象
 如果你无法接受，请不要使用！
-一个基于 Bukkit/Spigot 的我的世界 CS:GO 游戏模式插件。
+- 一个基于 Bukkit/Spigot 的我的世界 CS:GO 游戏模式插件。
 - 由雾里云端开发团队开发
 - 插件作者：Jens_Hon
 - 参与的开发者：Jens_Hon，Kenty，ANshiwang
