@@ -37,8 +37,6 @@
 
 ## 命令
 
-## 命令
-
 ### 管理员命令
 ![image](https://github.com/user-attachments/assets/3ab6a414-65f1-4294-9ef6-f02782d1bb02)
 
