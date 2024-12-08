@@ -26,6 +26,8 @@
 - 玩家系统
   - 击杀统计
   - 死亡统计
+  - ![image](https://github.com/user-attachments/assets/eb8d8cf4-227a-43ab-b5ab-f96677013fde)
+
   - 经济系统
   - 武器购买系统
 
@@ -38,18 +40,11 @@
 ## 命令
 
 ### 管理员命令
-- `/cs create <名称>` - 创建新游戏
-- `/cs remove <名称>` - 删除游戏
-- `/cs setlobby <名称>` - 设置游戏大厅
-- `/cs setspawn <名称> <队伍>` - 设置队伍出生点
-- `/cs forcestart <名称>` - 强制开始游戏
-- `/cs forcestop <名称>` - 强制结束游戏
+![image](https://github.com/user-attachments/assets/3ab6a414-65f1-4294-9ef6-f02782d1bb02)
+
 
 ### 玩家命令
-- `/cs join <名称>` - 加入游戏
-- `/cs leave` - 离开游戏
-- `/cs list` - 查看可用游戏列表
-- `/cs team <队伍>` - 选择队伍
+![image](https://github.com/user-attachments/assets/3594afa2-33a5-4693-8e05-77bc9eff253f)
 
 ## API
 
