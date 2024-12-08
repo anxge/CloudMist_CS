@@ -1,0 +1,37 @@
+# 游戏基础设置
+game:
+  max_players: 10    # 每个游戏最大玩家数
+  min_players: 2     # 开始游戏所需最少玩家数
+  win_score: 16      # 获胜所需回合数
+  auto_start: true   # 是否自动开始游戏
+
+# 回合设置
+round:
+  time: 120         # 每回合时间(秒)
+  freeze_time: 5    # 回合开始前冻结时间(秒)
+  buy_time: 20      # 购买时间(秒)
+  warmup_time: 60   # 热身时间(秒)
+  overtime: false   # 是否启用加时赛
+  overtime_rounds: 6  # 加时赛回合数
+
+# 队伍设置
+teams:
+  min_players: 1    # 每队最少玩家数
+  max_players: 5    # 每队最大玩家数
+  friendly_fire: false  # 是否允许友军伤害
+  auto_balance: true    # 是否自动平衡队伍
+  switch_after_round: true  # 是否在回合结束后切换队伍
+
+# 炸弹设置
+bomb:
+  timer: 45         # 炸弹爆炸倒计时(秒)
+  defuse_time: 10   # 拆弹时间(秒)
+  plant_range: 2    # 安放炸弹的范围(格)
+  defuse_range: 2   # 拆除炸弹的范围(格)
+  plant_time: 3     # 安放炸弹的时间(秒)
+
+# 观察者设置
+spectator:
+  allow: true       # 是否允许观战
+  fly_speed: 0.1    # 观战者飞行速度
+  allow_chat: false # 是否允许观战者聊天

@@ -1,0 +1,49 @@
+name: CloudMist_CS
+version: '${project.version}'
+main: WLYD.cloudMist_CS.CloudMist_CS
+api-version: '1.20'
+authors: [WLYD]
+description: A Counter-Strike like minigame plugin for Minecraft
+website: https://github.com/WLYD-CloudMist-CS
+
+depend: [Vault]
+softdepend: [PlaceholderAPI, TACZ, Forge]
+
+commands:
+  cmcs:
+    description: 玩家基础指令
+    usage: /cmcs <join|leave>
+    aliases: [cs]
+    permission: cloudmist.player
+  cmcsadmin:
+    description: 管理员指令
+    usage: /cmcsadmin <create|delete|list|info|setspawn|setbomb|settings|reload>
+    permission: cloudmist.admin
+
+permissions:
+  cloudmist.player:
+    description: 允许使用玩家基础指令
+    default: true
+    children:
+      cloudmist.player.join: true
+      cloudmist.player.leave: true
+  cloudmist.admin:
+    description: 允许使用管理员指令
+    default: op
+    children:
+      cloudmist.admin.create: true
+      cloudmist.admin.delete: true
+      cloudmist.admin.list: true
+      cloudmist.admin.info: true
+      cloudmist.admin.setspawn: true
+      cloudmist.admin.setbomb: true
+      cloudmist.admin.settings: true
+      cloudmist.admin.reload: true
+
+# 添加默认配置文件列表
+config-files:
+  - config.yml
+  - configs/game.yml
+  - configs/economy.yml
+  - configs/weapons.yml
+  - configs/mods.yml
